@@ -70,7 +70,8 @@ public class EntityListener implements Listener
 			switch (state)
 			{
 				case ALLOW:
-					break;
+                case null:
+                    break;
 				case DENY:
 				{
 					if (!event.isGliding())
@@ -96,8 +97,6 @@ public class EntityListener implements Listener
 
 					break;
 				}
-                case null:
-                    break;
             }
 		}
 	}
